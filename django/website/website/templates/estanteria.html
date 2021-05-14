@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Estanterias</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body class='body-estanteria'>
+    <h1 class="tema">ESTANTERIAS</h1>    
+    <header class="header-index">
+        <nav>
+            <ul class="menu-principal">
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'cajas' %}">Cajas</a></li>
+                <li><a href="{% url 'lockers' %}">Lockers</a></li>
+                <li><a href="{% url 'muebles' %}">Muebles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="logo2" src="{%static 'img/LTI_LOGO.png'%}" alt="logo">
+    <main class='parte1-estanteria'>
+        <div class='producto'>
+            <h3>Kallax</h3>
+            <img src="{% static 'img/estante1.png' %}" alt="estante1">
+            <p>Peso: 33.50Kg. <br>Pintura: Acrilica chocolote. <br>Estatura: 77x147 cm</p>
+        </div>
+        <div class='producto'>
+            <h3>Hyllis</h3>
+            <img src="{% static 'img/estante2.png' %}" alt="estante2">
+            <p>Peso: 3.96Kg. <br>Pintura: Blanca. <br>Estatura: 30x5x74 cm</p>
+        </div>
+        <div class='producto'>
+            <h3>EKET</h3>
+            <img src="{% static 'img/estante3.png' %}" alt="estante3">
+            <p>Peso: 11.90Kg. <br>Pintura: Mate satinada. <br>Estatura: 70x140x35 cm</p>
+        </div>
+        <div class='producto'>
+            <h3>Ramsu</h3>
+            <img src="{% static 'img/estante4.png' %}" alt="estante4">
+            <p>Peso: 19Kg. <br>Pintura: Chocolote. <br>Estatura: 42x147 cm</p>
+        </div>
+    </main>
+    <main class='parte2-estanteria'>
+        <div class='producto'>
+            <h3>Muscle rack</h3>
+            <img src="{% static 'img/estante5.png' %}" alt="estante5">
+            <p>Peso: 37.4Kg. <br>Pintura: Negro. <br>Estatura: 121.61x61x183 cm</p>
+        </div>
+        <div class='producto'>
+            <h3>HUSKY</h3>
+            <img src="{% static 'img/estante6.png' %}" alt="estante6">
+            <p>Peso: 60Kg. <br>Pintura: Negro. <br>Estatura: 195x61x198 cm</p>
+        </div>
+        <div class='producto'>
+            <h3>HDX</h3>
+            <img src="{% static 'img/estante7.png' %}" alt="estante7">
+            <p>Peso: 12.20Kg. <br>Pintura: Plastico blanco/negro. <br>Estatura: 44.9x89.9x187 cm</p>
+        </div>
+        <div class='producto'>
+            <h3>Rublox</h3>
+            <img src="{% static 'img/estante8.png' %}" alt="estante8">
+            <p>Peso: 13Kg. <br>Pintura: Blanco mate. <br>Estatura: 77x77 cm</p>
+        </div>
+    </main>
+</body>
+</html>

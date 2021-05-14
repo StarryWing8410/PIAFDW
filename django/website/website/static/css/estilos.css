@@ -1,0 +1,147 @@
+.parte1-estanteria div img, .parte2-estanteria div img{
+    width: 250px;
+}
+
+#parte1-lockers div img, #parte2-lockers div img{
+    width: 50px;
+}
+
+#logo1, #logo2{
+    width: 350px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu-principal{
+    text-align: center;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    background-color: #1a1c20;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+.menu-principal a{
+    color: #f4f4f4;
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+.menu-principal li:hover{
+    background-color: #f0a500 ;
+}
+
+.menu-principal li{
+flex-grow: 1;
+padding: 1em 0;
+}
+
+
+#body-principal{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 1em;
+    grid-template-areas: "logo titulo"
+                        "header header" 
+                        "video aside";
+}
+#img-logo{
+    grid-area: logo;
+    width: 350px;
+    margin-left: 15%;
+}
+#tema-principal{
+    grid-area: titulo;
+    text-align: center;
+    background-color: #f0a500;
+    padding: 40px;
+    margin: 0;
+    font-size: 4rem;
+}
+header{
+    grid-area: header;
+    margin-bottom: 0;
+}
+#video{
+    grid-area: video;
+    margin-left: 15%;
+}
+#somos{
+    grid-area: aside;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+#body-cajas{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 1em;
+    grid-template-areas: "logo titulo"
+                        "header header" 
+                        "parte1 parte2"
+                        "parte1 parte2";
+}
+.logo{
+    grid-area: logo;
+    width: 350px;
+    margin-left: 5%;
+}
+.tema{
+    grid-area: titulo;
+    text-align: center;
+    background-color: #f0a500;
+    padding: 40px;
+    margin: 0;
+    font-size: 4rem;
+}
+header{
+    grid-area: header;
+}
+.parte1{
+    grid-area: parte1;
+    margin-left: 60%;
+}
+.parte2{
+    grid-area: parte2;
+    margin-left: 60%;
+}
+
+
+.body-estanteria{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 1em;
+    grid-template-areas: "logo titulo"
+                        "header header" 
+                        "parte1 parte2"
+                        "parte1 parte2";
+}
+.logo2{
+    grid-area: logo;
+    width: 350px;
+    margin-left: 5%;
+}
+.tema{
+    grid-area: titulo;
+    text-align: center;
+    background-color: #f0a500;
+    padding: 40px;
+    margin: 0;
+    font-size: 4rem;
+}
+header{
+    grid-area: header;
+}
+.parte1-estanteria{
+    grid-area: parte1;
+    margin-left: 60%;
+}
+.parte2-estanteria{
+    grid-area: parte2;
+    margin-left: 60%;
+}

@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>cajas</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body id='body-cajas'>
+    <h1 class="tema">CAJAS</h1>    
+    <header class="header-index">
+        <nav>
+            <ul class="menu-principal">
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'estanteria' %}">Estanterias</a></li>
+                <li><a href="{% url 'lockers' %}">Lockers</a></li>
+                <li><a href="{% url 'muebles' %}">Muebles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img id='logo1' src="{% static 'img/LTI_LOGO.png' %}" alt="logo">
+    <main class='parte1'>
+        <div class='producto'>
+            <h3>Caja de plastico</h3>
+            <img src="{% static 'img/caja1.jpg' %}" alt="caja1">
+            <p>Color: Transparente. <br>Peso: 200Grs</p>
+        </div>
+        <div class='producto'>
+            <h3>Caja para alamacenamiento</h3>
+            <img src="{% static 'img/caja2.jpg' %}" alt="caja2">
+            <p>Color: Azul. <br>Peso: 300Grs</p>
+        </div>
+        <div class='producto'>
+            <h3>Caja organizadora</h3>
+            <img src="{% static 'img/caja3.jpg' %}" alt="caja3">
+            <p>Color: Transparente. <br>Peso: 100Grs</p>
+        </div>
+        <div class='producto'>
+            <h3>Caja de plastico corrugado</h3>
+            <img src="{% static 'img/caja4.jpg' %}" alt="caja4">
+            <p>Color: Blanco. <br>Peso: 50Grs</p>
+        </div>
+    </main>
+    <main class='parte2'>
+        <div class='producto'>
+            <h3>Caja de contenedor</h3>
+            <img src="{% static 'img/caja5.jpg' %}" alt="caja5">
+            <p>Color: Gris. <br>Peso: 200Grs</p>
+        </div>
+        <div class='producto'>
+            <h3>Caja de uso rudo</h3>
+            <img src="{% static 'img/caja6.jpg' %}" alt="caja6">
+            <p>Color: Negro. <br>Peso: 100Grs</p>
+        </div
+        <div class='producto'>
+            <h3>Caja de plastico abatible</h3>
+            <img src="{% static 'img/caja7.jpg' %}" alt="caja7">
+            <p>Color: Negro. <br>Peso: 50Grs</p>
+        </div
+        <div class='producto'>
+            <h3>Caja para ropero</h3>
+            <img src="{% static 'img/caja8.jpg' %}" alt="caja8">
+            <p>Color: Blanco. <br>Peso: 100Grs</p>
+        </div
+    </main>
+</body>
+</html>

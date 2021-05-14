@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>lockers</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body class='body-estanteria'>
+    <h1 class="tema">LOCkERS</h1>    
+    <header>
+        <nav>
+            <ul class="menu-principal">
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'estanteria' %}">Estanterias</a></li>
+                <li><a href="{% url 'cajas' %}">Cajas</a></li>
+                <li><a href="{% url 'muebles' %}">Muebles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="logo2" src="{%static 'img/LTI_LOGO.png'%}" alt="logo">
+    <main class='parte1-estanteria'>
+        <div>
+            <h3>Locker metalico</h3>
+            <img src="{% static 'img/locker1.png' %}" alt="locker1">
+            <p>Puertas: 4. <br>Material: Metal. <br>Tipo: Serie A</p>
+        </div>
+        <div>
+            <h3>Locker metalico perforado</h3>
+            <img src="{% static 'img/locker2.png' %}" alt="locker2">
+            <p>Puertas: 1. <br>Material: Metal. <br>Tipo: Serie C</p>
+        </div>
+        <div>
+            <h3>Locker metalico gris</h3>
+            <img src="{% static 'img/locker3.png' %}" alt="locker3">
+            <p>Puertas: 3. <br>Material: Metal. <br>Tipo: Serie B</p>
+        </div>
+        <div>
+            <h3>Locker laminado chocolate</h3>
+            <img src="{% static 'img/locker4.png' %}" alt="locker4">
+            <p>Puertas: 2. <br>Material: Plastico laminado. <br>Tipo: Serie D</p>
+        </div>
+        <main class='parte2-estanteria'>
+            <div>
+            <h3>Locker aluminio portacandado</h3>
+            <img src="{% static 'img/locker5.png' %}" alt="locker5">
+            <p>Puertas: 4. <br>Material: Aluminio. <br>Tipo: Serie 8000</p>
+        </div>
+        <div>
+            <h3>Locker portacandado</h3>
+            <img src="{% static 'img/locker6.png' %}" alt="locker6">
+            <p>Puertas: 2. <br>Material: Metal. <br>Tipo: Serie 7000</p>
+        </div>
+        <div>
+            <h3>Locker aluminio</h3>
+            <img src="{% static 'img/locker7.png' %}" alt="locker7">
+            <p>Puertas: 4. <br>Material: Aluminio cromado. <br>Tipo: Serie Premium</p>
+        </div>
+        <div>
+            <h3>Locker school</h3>
+            <img src="{% static 'img/locker8.png' %}" alt="locker8">
+            <p>Puertas: 12. <br>Material: Plastico reforzado. <br>Tipo: Serie U12000</p>
+        </div>
+        </main>
+    </main>
+</body>
+</html>

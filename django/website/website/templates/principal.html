@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Pagina principal</title>
+    <link type='text/css' href="{% static 'css/estilos.css' %}" rel="stylesheet" >
+</head>
+<body id='body-principal'>
+    <h1 id="tema-principal">BIENVENIDO</h1>    
+    <header class="header-index">
+        <nav>
+            <ul class="menu-principal">
+                <li><a href="{% url 'cajas' %}">Cajas</a></li>
+                <li><a href="{% url 'estanteria' %}">Estanterias</a></li>
+                <li><a href="{% url 'lockers' %}">Lockers</a></li>
+                <li><a href="{% url 'muebles' %}">Muebles</a></li>
+                <li><a href="{% url 'admin' %}">Administrador</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img id='img-logo' src="{% static 'img/LTI_LOGO.png' %}" alt="logo">
+    <div id='video'><iframe width="560" height="315" src="https://www.youtube.com/embed/Tq876cuxchY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <aside id='somos'>
+        <strong>
+            <h2>¿QUIENES SOMOS?</h2>
+        </strong>
+        <p>LTI MOBILIARIO es la empresa de venta de artículos para oficina más grande del mundo. Actualmente cuenta con más de 1,600 tiendas a nivel mundial, así como presencia en más de 25 países incluidos Estados Unidos, Canadá, Francia, Japón, Polonia, Israel, Tailandia, Hungría, Guatemala, Honduras, Costa Rica, El Salvador, Panamá y Colombia. <br><br>En México, LTI MOBILIARIO es la cadena más grande y exitosa, contando con 249 tiendas en los 32 Estados de la República Mexicana, estando en las principales ciudades de cada Estado. En Centro América, Sudamérica y el Caribe contamos con 38 tiendas, estando en los países, Guatemala, Costa Rica, El Salvador, Honduras, Panamá, Colombia y República Dominicana.</p>
+    </aside>
+</body>
+</html>

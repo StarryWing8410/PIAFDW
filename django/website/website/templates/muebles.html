@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>muebles</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body class='body-estanteria'>
+    <h1 class="tema">MUEBLES</h1>    
+    <header>
+        <nav>
+            <ul class="menu-principal">
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'estanteria' %}">Estanterias</a></li>
+                <li><a href="{% url 'cajas' %}">Cajas</a></li>
+                <li><a href="{% url 'lockers' %}">Lockers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="logo2" src="{%static 'img/LTI_LOGO.png'%}" alt="logo">
+    <main class='parte1-estanteria'>
+        <div>
+            <h3>Elite ejecutivo Trieste</h3>
+            <img src="{% static 'img/mueble1.png' %}" alt="mueble1">
+            <p>Color: Caoba. <br>Tipo: Oficina. <br>Medidas: 75x220x185 cm</p>
+        </div>
+        <div>
+            <h3>TOPLIVING Ejecutiva</h3>
+            <img src="{% static 'img/mueble2.png' %}" alt="mueble2">
+            <p>Color: Negro. <br>Tipo: ejecutivo. <br>Medidas: 71x58x36.4 cm</p>
+        </div>
+        <div>
+            <h3>AudioTek silla gamer</h3>
+            <img src="{% static 'img/mueble3.png' %}" alt="mueble3">
+            <p>Color: Rojo/Negro. <br>Tipo: Hogar/Oficina. <br>Medidas: 81.8x59.2x33.6 cm</p>
+        </div>
+        <div>
+            <h3>Vigar contemporaneo</h3>
+            <img src="{% static 'img/mueble4.png' %}" alt="mueble4">
+            <p>Color: Caoba. <br>Tipo: Hogar. <br>Medidas: 90x60x45 cm</p>
+        </div>
+        <main class='parte2-estanteria'>
+        <div>
+            <h3>Repisa zax MDF</h3>
+            <img src="{% static 'img/mueble5.png' %}" alt="mueble5">
+            <p>Color: Chocolate. <br>Tipo: Hogar. <br>Medidas: 40x70x40 cm</p>
+        </div>
+        <div>
+            <h3>Modulo compartido</h3>
+            <img src="{% static 'img/mueble6.png' %}" alt="mueble6">
+            <p>Color: Chocolate. <br>Tipo: Hogar/Oficina. <br>Medidas: 300x180x60 cm</p>
+        </div>
+        <div>
+            <h3>TriModulo</h3>
+            <img src="{% static 'img/mueble7.png' %}" alt="mueble7">
+            <p>Color: Gris/Blanco. <br>Tipo: Oficina. <br>Medidas: 70x90x70 cm</p>
+        </div>
+        <div>
+            <h3>Silla KB2</h3>
+            <img src="{% static 'img/mueble8.png' %}" alt="mueble8">
+            <p>Color: Negro. <br>Tipo: Hogar/Oficina. <br>Medidas: 80x60x55 cm</p>
+        </div>
+        </main>
+    </main>
+</body>
+</html>
